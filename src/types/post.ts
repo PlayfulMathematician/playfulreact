@@ -2,7 +2,7 @@ import type { ComponentType } from 'react'
 
 export interface PostFrontmatter {
   title: string
-  date?: string
+  date: string
   description?: string
 }
 
