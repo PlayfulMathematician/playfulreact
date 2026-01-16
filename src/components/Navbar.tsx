@@ -7,6 +7,7 @@ export default function Navbar() {
         <Link to="/posts">Posts</Link>{" | "}
         <Link to="/about">About</Link>{" | "}
         <Link to="/">Home</Link>
+
       </nav>
     </div>
   )
