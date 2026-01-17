@@ -1,7 +1,4 @@
-import Navbar from "../components/Navbar"
-
-
+import PageLayout from "../layouts/PageLayout"
 export default function NotFound() {
-  return <div><h1>404 – Not Found</h1><Navbar /></div>
+  return <PageLayout title="404 - Not Found" />
 }
-

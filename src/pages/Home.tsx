@@ -1,11 +1,4 @@
-import Navbar from '../components/Navbar'
-
+import PageLayout from "../layouts/PageLayout"
 export default function Home() {
-  return (
-    <div>
-      <h1>Home</h1>
-      <Navbar />
-    </div>
-  )
+  return <PageLayout title="Home" />
 }
-
