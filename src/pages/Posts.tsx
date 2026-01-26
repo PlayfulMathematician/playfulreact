@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { getAllPosts } from '../lib/posts'
 import PageLayout from '../layouts/PageLayout';
-
+import { toWords } from '../lib/date';
 const posts = getAllPosts();
 export default function Posts() {
   return (
@@ -12,7 +12,7 @@ export default function Posts() {
             <li key={post.slug}>
               <Link to={`/posts/${post.slug}`}>
                 {post.title}
-              </Link>
+              </Link> - {toWords(post.date)}
             </li>
           ))}
         </ul>
