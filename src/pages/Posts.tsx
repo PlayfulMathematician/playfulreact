@@ -12,7 +12,7 @@ export default function Posts() {
             <li key={post.slug}>
               <Link to={`/posts/${post.slug}`}>
                 {post.title}
-              </Link> - {toWords(post.date)}
+              </Link>{" - "}{toWords(post.date)}
             </li>
           ))}
         </ul>
