@@ -4,7 +4,8 @@ import mdx from "@mdx-js/rollup";
 import remarkFrontmatter from "remark-frontmatter";
 import remarkMdxFrontmatter from "remark-mdx-frontmatter";
 import rehypeHighlight from "rehype-highlight";
-
+import remarkMath from "remark-math";
+import rehypeMathjax from "rehype-mathjax";
 export default defineConfig({
   plugins: [
     react(),
@@ -12,8 +13,9 @@ export default defineConfig({
       remarkPlugins: [
         remarkFrontmatter,
         [remarkMdxFrontmatter, { name: "frontmatter" }],
+        remarkMath,
       ],
-      rehypePlugins: [rehypeHighlight],
+      rehypePlugins: [rehypeHighlight, rehypeMathjax],
     }),
   ],
 });
