@@ -5,10 +5,8 @@ export default function Navbar() {
     <div>
       <nav>
         <Link to="/">Home</Link>{" | "}
-        <Link to="/posts">Posts</Link>{" | "}
         <Link to="/about">About</Link>{" | "}
         <Link to="/contact">Contact</Link>
-
       </nav>
     </div>
   )
